@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="t d">
+<title id="t">Kalendra system overview</title>
+<desc id="d">A Flutter client with chat and calendar surfaces talks to an app backend over HTTPS. The backend reads and writes connected Google and Outlook calendars, runs assistant turns through a language model and speech services, and stores account metadata. Local notifications, preferred hours and conflict layout stay on the device.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#101319"/>
+<stop offset="1" stop-color="#1a2338"/>
+</linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#3aa79a"/>
+</marker>
+<style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#eef0f4}
+.h{font-size:24px;font-weight:700}
+.k{font-size:12px;font-weight:700;letter-spacing:1.4px;fill:#3aa79a}
+.b{font-size:14px;font-weight:600}
+.s{font-size:12px;fill:#b9c0cc}
+.box{fill:#17262b;stroke:#3aa79a;stroke-width:1.5}
+.mid{fill:#2a2118;stroke:#e08a3c;stroke-width:1.5}
+.ext{fill:#1f2236;stroke:#7f8fe0;stroke-width:1.5;stroke-dasharray:6 4}
+.cell{fill:#1d3a3d;stroke:#3aa79a;stroke-width:1.2}
+.cellm{fill:#3a2b1a;stroke:#e08a3c;stroke-width:1.2}
+.celle{fill:#272b47;stroke:#7f8fe0;stroke-width:1.2}
+.ln{stroke:#3aa79a;stroke-width:2;fill:none;marker-end:url(#ar)}
+</style>
+</defs>
+<rect width="1200" height="680" rx="16" fill="url(#bg)"/>
+<text x="40" y="46" class="h">Kalendra: one client, backend-mediated calendars, confirmed assistant actions</text>
+<text x="40" y="72" class="s">Calendar grids and conflict layout render locally; reads, writes and assistant turns go through the app backend.</text>
+
+<rect x="40" y="100" width="520" height="520" rx="14" class="box"/>
+<text x="60" y="128" class="k">FLUTTER CLIENT</text>
+<rect x="60" y="146" width="220" height="72" rx="9" class="cell"/>
+<text x="74" y="172" class="b">Assistant home</text>
+<text x="74" y="192" class="s">typed and voice turns, cards, confirm sheets</text>
+<rect x="300" y="146" width="240" height="72" rx="9" class="cell"/>
+<text x="314" y="172" class="b">Unified calendar</text>
+<text x="314" y="192" class="s">day, week, month, schedule, tasks</text>
+<rect x="60" y="234" width="220" height="72" rx="9" class="cell"/>
+<text x="74" y="260" class="b">Conflict layout</text>
+<text x="74" y="280" class="s">partial and full overlap clusters, pickers</text>
+<rect x="300" y="234" width="240" height="72" rx="9" class="cell"/>
+<text x="314" y="260" class="b">Manual create and edit</text>
+<text x="314" y="280" class="s">event and task sheets, RSVP, guests</text>
+<rect x="60" y="322" width="480" height="72" rx="9" class="cell"/>
+<text x="74" y="348" class="b">On-device state</text>
+<text x="74" y="368" class="s">connected accounts, tokens, prefs, chat transcript, preferred hours</text>
+<rect x="60" y="410" width="230" height="72" rx="9" class="cell"/>
+<text x="74" y="436" class="b">OAuth connect flow</text>
+<text x="74" y="456" class="s">PKCE deep link return for Google and Outlook</text>
+<rect x="310" y="410" width="230" height="72" rx="9" class="cell"/>
+<text x="324" y="436" class="b">Local notifications</text>
+<text x="324" y="456" class="s">daily brief time, background refresh work</text>
+<rect x="60" y="498" width="480" height="100" rx="9" class="cell"/>
+<text x="74" y="524" class="b">Sign-in and billing</text>
+<text x="74" y="544" class="s">Firebase Auth, email verification, social sign-in, native subscriptions</text>
+<text x="74" y="564" class="s">Analytics, crash reporting, remote config, push token registration</text>
+
+<rect x="590" y="100" width="280" height="520" rx="14" class="mid"/>
+<text x="610" y="128" class="k" style="fill:#e08a3c">APP BACKEND</text>
+<rect x="610" y="146" width="240" height="58" rx="9" class="cellm"/>
+<text x="624" y="170" class="b">Assistant streaming API</text>
+<text x="624" y="188" class="s">SSE text and voice turns</text>
+<rect x="610" y="216" width="240" height="58" rx="9" class="cellm"/>
+<text x="624" y="240" class="b">Action execution</text>
+<text x="624" y="258" class="s">create, update, delete after confirm</text>
+<rect x="610" y="286" width="240" height="58" rx="9" class="cellm"/>
+<text x="624" y="310" class="b">Unified calendar fetch</text>
+<text x="624" y="328" class="s">multi-account windowed event list</text>
+<rect x="610" y="356" width="240" height="58" rx="9" class="cellm"/>
+<text x="624" y="380" class="b">Account sync and profile</text>
+<text x="624" y="398" class="s">metadata, usage, entitlements</text>
+<rect x="610" y="426" width="240" height="58" rx="9" class="cellm"/>
+<text x="624" y="450" class="b">Token and session checks</text>
+<text x="624" y="468" class="s">expired calendar connection handling</text>
+<rect x="610" y="496" width="240" height="102" rx="9" class="cellm"/>
+<text x="624" y="522" class="b">Downstream services</text>
+<text x="624" y="542" class="s">language model, speech in and out,</text>
+<text x="624" y="560" class="s">provider calendar and task APIs</text>
+
+<rect x="900" y="100" width="260" height="520" rx="14" class="ext"/>
+<text x="920" y="128" class="k" style="fill:#7f8fe0">EXTERNAL</text>
+<rect x="920" y="160" width="220" height="54" rx="9" class="celle"/>
+<text x="934" y="184" class="b">Google Calendar</text>
+<text x="934" y="200" class="s">OAuth and REST</text>
+<rect x="920" y="228" width="220" height="54" rx="9" class="celle"/>
+<text x="934" y="252" class="b">Microsoft Outlook</text>
+<text x="934" y="268" class="s">OAuth and REST</text>
+<rect x="920" y="296" width="220" height="54" rx="9" class="celle"/>
+<text x="934" y="320" class="b">Firebase Auth</text>
+<text x="934" y="336" class="s">identity for app sign-in</text>
+<rect x="920" y="364" width="220" height="54" rx="9" class="celle"/>
+<text x="934" y="388" class="b">App and Play billing</text>
+<text x="934" y="404" class="s">subscription products</text>
+
+<path d="M560 280 H582" class="ln"/>
+<path d="M870 280 H896" class="ln"/>
+<text x="40" y="652" class="s">Nothing from an assistant turn is written to a calendar until the person confirms in the normal editor or a confirm sheet.</text>
+</svg>

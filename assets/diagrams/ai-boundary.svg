@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 720" role="img" aria-labelledby="t d">
+<title id="t">What stays on the device and what crosses to the backend</title>
+<desc id="d">Three columns. Left: what stays on the device, including calendar views, the review sheet, local reminders, preferred-hours clipping, account storage and the recorded audio file. Middle: what is sent to the app backend with each assistant turn, including the typed text or audio, the session transcript, device time context, identity headers, connected account records and plan context. Right: what happens on the backend side, including a language model, speech services, calendar provider APIs and usage checks. A strip at the bottom lists what comes back and states that nothing is applied until the person confirms.</desc>
+<defs><style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#eef0f4}
+.h{font-size:24px;font-weight:700}
+.k{font-size:12.5px;font-weight:700;letter-spacing:1.5px}
+.b{font-size:14.5px;font-weight:700}
+.s{font-size:12.5px;fill:#b9c0cc}
+.n{font-size:13px;fill:#b9c0cc;font-style:italic}
+.zl{fill:#17262b;stroke:#3aa79a;stroke-width:2}
+.zm{fill:#2a2118;stroke:#e08a3c;stroke-width:2}
+.zr{fill:#1f2236;stroke:#7f8fe0;stroke-width:2;stroke-dasharray:7 5}
+.il{fill:#1d3a3d;stroke:#3aa79a;stroke-width:1.5}
+.im{fill:#3a2b1a;stroke:#e08a3c;stroke-width:1.5}
+.ir{fill:#272b47;stroke:#7f8fe0;stroke-width:1.5}
+.ar{stroke:#e08a3c;stroke-width:2.5;fill:none;marker-end:url(#m)}
+.ar2{stroke:#7f8fe0;stroke-width:2.5;fill:none;marker-end:url(#m2)}
+</style>
+<marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e08a3c"/></marker>
+<marker id="m2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7f8fe0"/></marker>
+</defs>
+<rect width="1300" height="720" rx="16" fill="#101319"/>
+<text x="40" y="46" class="h">Assistant turn: local work versus what crosses to the backend</text>
+<rect x="40" y="72" width="360" height="480" rx="14" class="zl"/>
+<text x="60" y="104" class="k" style="fill:#3aa79a">ON THE DEVICE</text>
+<rect x="60" y="124" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="148" class="b">Calendar views and conflict layout</text>
+<text x="74" y="168" class="s">day, week, month and schedule grids</text>
+<rect x="60" y="194" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="218" class="b">Review step before any create or edit</text>
+<text x="74" y="238" class="s">assistant proposals pre-fill the editor</text>
+<rect x="60" y="264" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="288" class="b">Reminders and daily brief</text>
+<text x="74" y="308" class="s">scheduled locally from fixed templates</text>
+<rect x="60" y="334" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="358" class="b">Preferred hours and slot clipping</text>
+<text x="74" y="378" class="s">free windows trimmed to saved hours</text>
+<rect x="60" y="404" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="428" class="b">Account list and provider tokens</text>
+<text x="74" y="448" class="s">kept in the app local storage</text>
+<rect x="60" y="474" width="320" height="58" rx="9" class="il"/>
+<text x="74" y="498" class="b">Recorded audio of a voice turn</text>
+<text x="74" y="518" class="s">removed from the device after the turn</text>
+<rect x="470" y="72" width="360" height="480" rx="14" class="zm"/>
+<text x="490" y="104" class="k" style="fill:#e08a3c">SENT TO THE APP BACKEND</text>
+<rect x="490" y="124" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="148" class="b">The turn itself</text>
+<text x="504" y="168" class="s">typed text, or the recorded audio</text>
+<rect x="490" y="194" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="218" class="b">Session transcript</text>
+<text x="504" y="238" class="s">held in memory, resent with each turn</text>
+<rect x="490" y="264" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="288" class="b">Device time context</text>
+<text x="504" y="308" class="s">time zone name, UTC offset, timestamp</text>
+<rect x="490" y="334" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="358" class="b">Identity headers</text>
+<text x="504" y="378" class="s">sign-in token, email, display name</text>
+<rect x="490" y="404" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="428" class="b">Connected calendar accounts</text>
+<text x="504" y="448" class="s">provider, email, name, time zone, tokens</text>
+<rect x="490" y="474" width="320" height="58" rx="9" class="im"/>
+<text x="504" y="498" class="b">App and plan context</text>
+<text x="504" y="518" class="s">build number, subscription identifier</text>
+<rect x="900" y="72" width="360" height="480" rx="14" class="zr"/>
+<text x="920" y="104" class="k" style="fill:#7f8fe0">BACKEND SIDE (NOT IN THE APP)</text>
+<rect x="920" y="124" width="320" height="58" rx="9" class="ir"/>
+<text x="934" y="148" class="b">Language model</text>
+<text x="934" y="168" class="s">interprets the request, proposes an action</text>
+<rect x="920" y="194" width="320" height="58" rx="9" class="ir"/>
+<text x="934" y="218" class="b">Speech services</text>
+<text x="934" y="238" class="s">audio in, transcript and audio chunks out</text>
+<rect x="920" y="264" width="320" height="58" rx="9" class="ir"/>
+<text x="934" y="288" class="b">Calendar and task provider APIs</text>
+<text x="934" y="308" class="s">event and task reads and writes</text>
+<rect x="920" y="334" width="320" height="58" rx="9" class="ir"/>
+<text x="934" y="358" class="b">Plan and usage checks</text>
+<text x="934" y="378" class="s">daily message and monthly action limits</text>
+<path d="M400 312 H466" class="ar"/>
+<path d="M830 312 H896" class="ar2"/>
+<rect x="40" y="580" width="1220" height="108" rx="12" fill="#1a1d28" stroke="#4a5068" stroke-width="1.5"/>
+<text x="60" y="610" class="k" style="fill:#c9ced9">BACK TO THE DEVICE</text>
+<text x="60" y="636" class="b">Reply text, an optional result card, a proposed action, usage counts and audio chunks</text>
+<text x="60" y="662" class="s">Nothing is applied until the person confirms: create and edit open the normal editor pre-filled; delete and task actions use a confirm sheet.</text>
+<text x="60" y="682" class="n">What the backend sends to the language model is not described here.</text>
+</svg>
